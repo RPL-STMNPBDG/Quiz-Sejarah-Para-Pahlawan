@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fitsSystemWindows="true"
+    tools:context=".Prev10Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:onClick="btnBackToMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Pahlawan Revolusi"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-12sp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffffe1e1"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvNamaLengkap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Kolonel Sugiyono Mangunwiyoto"
+                        android:textColor="#ffec2d2d"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffd0ffdb"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvTglLahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="12 Agustus 1926"
+                        android:textColor="#ff2a7e2f"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#B8E9FF"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvAsal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Yogyakarta"
+                        android:textColor="#2196F3"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imagePahlawan"
+                        android:layout_width="280dp"
+                        android:layout_height="280dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="-80dp"
+                        android:background="@android:color/transparent"
+                        android:elevation="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/prev_sugiyono"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-80dp"
+                        android:background="@drawable/bg_top_radius"
+                        android:backgroundTint="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Biodata Pahlawan :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Lahir"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Yogyakarta, 12 Agustus 1926"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Wafat"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Yogyakarta, 01 Oktober 1965"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Makam"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Taman Makam Pahlawan Semaki,\n  Yogyakarta"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Agama"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Non Islam"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Pedidikan"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Sekolah Guru Pertama di Wonosari,\n  Kabupaten Gunungkidul.\n
+ Pembela Tanah Air (PETA).\n
+ Tentara Keamanan Rakyat (TKR).
+"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Sejarah Singkat :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="   Kolonel INF. Anumerta Sugiyono Mangunwiyoto adalah salah satu Pahlawan Revolusi yang menjadi
+korban dalam peristiwa Gerakan 30 September yang terjadi di Yogyakarta.\n\n
+  Pada tahun 1965 situasi sedang krisis yang disebabkan oleh pemberontakan PKI. Terjadi Agitasi dan
+Infiltrasi yang dilakukan PKI baik di tubuh TNI maupun kekuatan politik lainnya. PKI berhasil
+melakukan provokasi dan mobilisasi pada petani dan buruh di daerah seperti Yogyakarta, PKI juga
+mngusulkan kepada pemerintah untuk mempersenjatai sekitar 15 juta buruh dan tani yang mereka
+sebut sebagai kekuatan ke-5 (selain TNI dan Polisi). Hal ini ditentang habis-habisan oleh sejumlah
+perwira TNI Angkatan Darat, karena bisa memicu perang saudara. Melihat hal ini, PKI menjadikan
+perwira TNI Angkatan Darat sebagai musuh utama yang akan menghambat tujuan mereka.\n\n
+   PKI benar-benar mempersiapkan pemberontakan secara sistematis, hingga semua lini
+pemerintahan dari pusat hingga wilayah terkecil tidak luput dari penguasaan mereka. Bahkan
+mereka juga melakukan penyusupan pada tubuh TNI, hingga puncaknya mereka melakukn aksi
+penculikan dan pembunuhan terhadap para perwira TNI Angkatan Darat sebagai sebuah rangkaian
+pemberontakan. Mencuatlah peristiwa G30S/PKI yang sangat mencekam dimana para perwira TNI
+Angkatan Darat yang ada di Jakarta menjadi korban penculikan, penganiayaan dan pembunuhan
+termasuk juga di Yogyakarta. Karena sering melakukan perlawanan terhadap PKI, maka Sugiyono
+dan Katamso diculik pada tanggal 1 Oktober 1965 dan dibunuh di daerah Keuntungan, Yogyakarta.
+Jasad mereka disembunyikan dalam lubang yang telah dipersiapkan. Pencarian besar-besaranpun
+dilakukan, hingga pada tanggal 21 Oktober 1965 jenazahnya baru di ketemukan dalam keadaan
+rusak. Pada tanggal 22 Oktober jenazahnya di makamkan di Taman Makam Pahlawan Semaki,
+Yogyakarta. Atas jasa-jasanya, maka ia di promosikan menjadi Kolonel Infanteri Anumerta serta
+diberi gelar Pahlawan Revolusi berdasarkan SK Presiden Nomor 118/KOTI/tahun1965 tertanggal 19
+Oktober 1965.
+"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

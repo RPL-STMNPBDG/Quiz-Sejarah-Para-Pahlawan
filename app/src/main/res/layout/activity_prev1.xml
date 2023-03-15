@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fitsSystemWindows="true"
+    tools:context=".Prev1Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:onClick="btnBackToMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Pahlawan Revolusi"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-12sp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffffe1e1"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvNamaLengkap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Jenderal Ahmad Yani"
+                        android:textColor="#ffec2d2d"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffd0ffdb"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvTglLahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="22 Juni 1922"
+                        android:textColor="#ff2a7e2f"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#B8E9FF"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvAsal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Purworejo"
+                        android:textColor="#2196F3"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imagePahlawan"
+                        android:layout_width="280dp"
+                        android:layout_height="280dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="-80dp"
+                        android:background="@android:color/transparent"
+                        android:elevation="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/prev_jenderalahmadyani"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-80dp"
+                        android:background="@drawable/bg_top_radius"
+                        android:backgroundTint="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Biodata Pahlawan :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Lahir"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Purworejo, 22 Juni 1922"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Wafat"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Jakarta, 01 Oktober 1965"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Makam"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Taman Makam Pahlawan Kalibata"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Agama"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Islam"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Pedidikan"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": HIS (setingkat SD) Bogor, tamat tahun\n  1935.\n
+ MULO (setingkat SMP) kelas B Afd.\n  Bogor, tamat tahun 1938.\n
+ AMS (setingkat SMU) bagian B Afd.\n  Jakarta, berhenti tahun 1940.\n
+ Pendidikan militer pada Dinas\n  Topografi Militer di Malang.\n
+ Pendidikan Heiho di Magelang.\n
+ PETA (Tentara Pembela Tanah Air) di\n  Bogor.\n
+ Command and General Staff College\n  di Fort Leaven Worth, Kansas,\n  Amerika Serikat, tahun 1955.\n
+ Special Warfare Course di Inggris,\n  tahun 1956.
+"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Sejarah Singkat :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="   Sejarah Si Jenderal TNI Ahmad Yani adalah salah satu korban dari peristiwa G30S PKI yang kini
+dikenal sebagai pahlawan revolusi. Beliau diketahui lahir di Purworejo, Jawa Tengah. Jenderal
+Ahmad Yani lahir pada tanggal 19 Juni 1922. Pada waktu muda, beliau pernah mengikuti wajib
+militer dan berperan sebagai tentara Hindia Belanda. Lalu saat Jepang menjajah Indonesia, Jenderal
+Ahmad Yani menjadi salah satu anggota tentara Pembela Tanah Air (PETA).\n\n
+   Selain itu, Ahmad Yani juga pernah melakukan perang gerilya saat melawan Belanda di peristiwa
+agresi militer Belanda. Setelah adanya pengakuan kedaulatan Indonesia oleh Belanda, beliau lalu
+ditarik ke Kota Tegal, Jawa Tengah. D i kota tersebut Ahmad Yani bersama pasukan khususnya yaitu
+Banteng Raiders. Dimana mereka berhasil menumpas dan mengalahkan pemberontakan Darul Islam
+yang dulu dibentuk oleh Kartosuwiryo.\n\n
+   Pada tahun 1958, Ahmad Yani berhasil meredam pemberontakan PRRI yang dipimpin oleh Letkol
+Ahmad Husein di Sumatera Barat. Prestasi tersebut kemudian membuat Ahmad Yani dilantik
+menjadi Panglima Angkatan Darat. Beliau di sana menggantikan Jenderal AH Nasution.\n\n
+   Pada tanggal 30 September 1965 dini hari, Ahmad Yani diculik oleh pasukan yang bernama
+Cakrabirawa yang dipimpin langsung oleh Letnan Kolonel Untung. Dimana mereka berafiliasi dengan
+PKI. Saat diculik di kediamannya, Ahmad Yani ditemukan sudah tewas dengan luka tembak yang
+dilakukan oleh pasukan Cakrabirawa. Jasad Ahmad Yani kemudian dibawa, lalu dimasukkan ke dalam
+sumur yang ada di wilayah lubang buaya.\n\n
+   Jasadnya bersama dengan korban yang lainnya berhasil diangkat pada tanggal 4 Oktober 1965.
+Kemudian, Ahmad Yani dimakamkan secara militer di Taman Makam Pahlawan yang ada di daerah
+Kalibata, Jakarta. Setelah itu, pemerintah Indonesia memberikan gelar kepada Ahmad Yani sebagai
+Pahlawan Revolusi.
+"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

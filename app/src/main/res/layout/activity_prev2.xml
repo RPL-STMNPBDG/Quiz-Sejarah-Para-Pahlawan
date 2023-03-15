@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fitsSystemWindows="true"
+    tools:context=".Prev2Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:onClick="btnBackToMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Pahlawan Revolusi"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-12sp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffffe1e1"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvNamaLengkap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Letnan Jenderal Raden Suprapto"
+                        android:textColor="#ffec2d2d"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffd0ffdb"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvTglLahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="20 Juni 1920"
+                        android:textColor="#ff2a7e2f"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#B8E9FF"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvAsal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Purwokerto"
+                        android:textColor="#2196F3"
+                        android:textSize="18sp"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imagePahlawan"
+                        android:layout_width="280dp"
+                        android:layout_height="280dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="-80dp"
+                        android:background="@android:color/transparent"
+                        android:elevation="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/prev_suprapto"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-80dp"
+                        android:background="@drawable/bg_top_radius"
+                        android:backgroundTint="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Biodata Pahlawan :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Lahir"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Purwokerto, 20 Juni 1920"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Wafat"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Jakarta, 01 Oktober 1965"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Makam"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Taman Makam Pahlawan Kalibata"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Agama"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": Islam"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="Pedidikan"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text=": MULO (Meer Uitgebreid Lager\n  Onderwijs) yang setara SLTP di\n  Yogyakarta.\n
+ AMS (Algemeene Middlebare School)\n  yang setara SLTA di Yogykarta.\n
+ Koninklijke Militaire Akademie di\n  Bandung.
+"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Sejarah Singkat :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="   Letnan Jenderal TNI Anumerta R. Suprapto, seorang pahlawan revolusi Indonesia yang menjadi
+korban dalam G30SPKI pada tahun 1965 dan kini dimakamkan di Taman Makam Pahlawan Kalibata,
+Jakarta. Pria yang lahir pada tanggal 24 Agustus 1920 ini menyelesaikan pendidikan di sekolah MULO
+yang setara dengan SLTP dan AMS yang setara dengan SLTA sekarang pada tahun 1941.\n\n
+   Suprapto kemudian memilih untuk masuk ke sekolah militer Belanda yang bernama Koninklijke
+Militaire Akademie di Bandung. Akan tetapi Suprapto tidak menyelesaikan pendidikan militernya
+dikarenakan oleh serbuan Jepang ke Indonesia. Ia bahkan sempat menjadi tahanan Jepang pada saat
+itu, namun Suprapto berhasil melarikan diri.\n\n
+   Di masa awal kemerdekaan Indonesia, Suprapto bergabung dengan Tentara Keamanan Rakyat
+(TKR). Ia juga turut serta dalam pertempuran melawan Jepang di Cilacap dan berhasil melucuti
+senjata para tentara Jepang. Pria asal Purwokerto ini juga pernah diangkat menjadi ajudan dari
+Panglima Besar Sudirman pada tahun 1946. Pada bulan September 1949 ia lalu diangkat menjadi
+Kepala Staf Tentara dan Teritorial (TST) IV/Diponegoro di Semarang dan pada tahun 1951 berpindah
+ke Markas Besar TNI di Jakarta sebagai Staf Angkatan Darat.\n\n
+   Pada tanggal 01 Oktober dini hari, Suprapto, yang saat itu tidak bisa tidur karena sakit gigi yang
+dideritanya, didatangi oleh sekawanan orang, yang mengaku sebagai pengawal kepresidenan
+(Cakrabirawa), yang mengatakan bahwa ia dipanggil oleh presiden Sukarno untuk menghadap.
+Suprapto kemudian dimasukkan ke dalam truk dan dibawa ke Lubang Buaya, daerah pinggiran kota
+Jakarta, bersama dengan 6 orang lainnya.\n\n
+   Malam harinya, Jendral Suprapto dan keenam orang lainnya ditembak mati dan dilemparkan ke
+dalam sebuah sumur tua. Baru pada tanggal 5 Oktober, jenazah para korban pembunuhan tersebut
+bisa dikeluarkan dan dimakamkan di Taman Makam Pahlawan Kalibata. Di hari itu juga, Presiden Sukarno mengeluarkan Kepres no. 111/KOTI/1965, yang meresmikan Suprapto bersama korban
+Lubang Buaya yang lain sebagai Pahlawan Revolusi.
+"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

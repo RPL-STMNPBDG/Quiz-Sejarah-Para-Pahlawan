@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp"
+    tools:context=".LevelTigaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_question3"
+        android:text="Total Questions "
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:id="@+id/question3"
+        android:text="This will be the questions"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ansA3"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans A"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ansB3"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans B"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ansC3"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans C"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ansD3"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans D"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit3"
+        android:text="Submit"
+        android:backgroundTint="@color/teal_700"
+        android:layout_marginTop="70dp"/>
+
+</LinearLayout>
